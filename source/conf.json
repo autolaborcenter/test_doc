@@ -1,0 +1,57 @@
+{
+	"_readme": [
+		"注：uri 必须保障唯一性，若有重复引用，请使用 rewrite 注册新的 uri",
+		"由于设计缺陷，rewrite 时只能自定义最后一级路径",
+		"uri 格式 1 - 相对文档：a/b/c",
+		"uri 格式 2 - 相对站内：/usedoc/ap1/a/b/c",
+		"uri 格式 3 - 绝对地址：http://www.baidu.com",
+		"_readme 本身并没有什么软用"
+	],
+	"index": "",//首页显示地址
+	"rewrite": {
+		
+	},
+	"plugin": {
+		"emoji": false,
+		"taskList": true,
+		"tex": true,
+		"flowChart": true,
+		"sequenceDiagram": true
+	},
+	"menu": {
+		"toc": {
+			"startLevel": "1",
+			"overLevel": "1"
+		},
+		"items": [
+			{
+				"name": "test",//一级栏目名称,产品名称
+				"isOpen": true//是否打开
+        "items": [//二级栏目
+        	{
+						"name": "",
+						"uri": ""
+					},
+      		{
+						"name": "",
+						"uri": ""
+					},
+      		{
+						"name": "",
+						"isOpen": false,
+						"items": [//三级栏目
+							{
+								"name": "",
+								"uri": ""
+							},
+							{
+								"name": "",
+								"uri": ""
+							}
+						]
+					},
+        ]
+			}
+		]
+	}
+}
