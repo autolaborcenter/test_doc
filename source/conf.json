@@ -7,7 +7,7 @@
 		"uri 格式 3 - 绝对地址：http://www.baidu.com",
 		"_readme 本身并没有什么软用"
 	],
-	"index": "",//首页显示地址
+	"index": "test2",//首页显示地址
 	"rewrite": {
 		
 	},
@@ -26,31 +26,23 @@
 		"items": [
 			{
 				"name": "test",//一级栏目名称,产品名称
-				"isOpen": true//是否打开
-        "items": [//二级栏目
-        	{
-						"name": "",
-						"uri": ""
+				"isOpen": true,//是否打开
+		        "items": [//二级栏目
+		        	{
+						"name":"test2",
+						"uri": "test2"
 					},
-      		{
-						"name": "",
-						"uri": ""
-					},
-      		{
-						"name": "",
+      				{
+						"name": "test3",
 						"isOpen": false,
 						"items": [//三级栏目
 							{
-								"name": "",
-								"uri": ""
-							},
-							{
-								"name": "",
-								"uri": ""
+								"name": "test4",
+								"uri": "test4"
 							}
 						]
-					},
-        ]
+					}
+		        ]
 			}
 		]
 	}
